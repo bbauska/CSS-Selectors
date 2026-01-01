@@ -12,15 +12,15 @@ For example, setting the font color for every element.
 ```
 <html>
 <head>
-    <style>
-        * {
-            color: red;
-        }
-    </style>
+  <style>
+    * {
+      color: red;
+    }
+  </style>
 </head>
 <body>
-    <h1>Header Text</h1>
-    <p>Paragraph Text</p>
+  <h1>Header Text</h1>
+  <p>Paragraph Text</p>
 </body>
 </html>
 ```
@@ -31,14 +31,14 @@ For example, setting a common font size for all paragraphs.
 ```
 <html>
 <head>
-    <style>
-        p {
-            font-size: 16px;
-        }
-    </style>
+  <style>
+    p {
+      font-size: 16px;
+    }
+  </style>
 </head>
 <body>
-    <p>This paragraph styled with font size 16px.</p>
+  <p>This paragraph styled with font size 16px.</p>
 </body>
 </html>
 ```
@@ -49,15 +49,15 @@ making all buttons have a blue background.
 ```
 <html>
 <head>
-    <style>
-        .button {
-            background-color: blue;
-            color: white;
-        }
-    </style>
+  <style>
+    .button {
+      background-color: blue;
+      color: white;
+    }
+  </style>
 </head>
 <body>
-    <button class="button">Click Me!</button>
+  <button class="button">Click Me!</button>
 </body>
 </html>
 ```
@@ -68,14 +68,14 @@ the background color of a header.
 ```
 <html>
 <head>
-    <style>
-        #header {
-            background-color: gray;
-        }
-    </style>
+  <style>
+    #header {
+      background-color: gray;
+    }
+  </style>
 </head>
 <body>
-    <div id="header">This is the header section.</div>
+  <div id="header">This is the header section.</div>
 </body>
 </html>
 ```
@@ -91,16 +91,16 @@ example, styling paragraphs inside a div.
 ```
 <html>
 <head>
-    <style>
-        div p {
-            color: red;
-        }
-    </style>
+  <style>
+    div p {
+      color: red;
+    }
+  </style>
 </head>
 <body>
-    <div>
-        <p>This paragraph inside a div will be red.</p>
-    </div>
+  <div>
+    <p>This paragraph inside a div will be red.</p>
+  </div>
 </body>
 </html>
 ```
@@ -111,19 +111,19 @@ direct children paragraphs of a div.
 ```
 <html>
 <head>
-    <style>
-        div>p {
-            margin-left: 20px;
-        }
-    </style>
+  <style>
+    <div>p {
+      margin-left: 20px;
+    }
+  </style>
 </head>
 <body>
+  <div>
+    <p>This is a direct child and has a left margin.</p>
     <div>
-        <p>This is a direct child and has a left margin.</p>
-        <div>
-            <p>This is not a direct child.</p>
-        </div>
+      <p>This is not a direct child.</p>
     </div>
+  </div>
 </body>
 </html>
 ```
@@ -134,16 +134,16 @@ making the first paragraph bold after an h1.
 ```
 <html>
 <head>
-    <style>
-        h1+p {
-            font-weight: bold;
-        }
-    </style>
+  <style>
+    h1+p {
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-    <h1>This is a header.</h1>
-    <p>This is immediately following the header and is bold.</p>
-    <p>This will not be bold.</p>
+  <h1>This is a header.</h1>
+  <p>This is immediately following the header and is bold.</p>
+  <p>This will not be bold.</p>
 </body>
 </html>
 ```
@@ -154,16 +154,16 @@ example, italicizing all paragraphs following an h1.
 ```
 <html>
 <head>
-    <style>
-        h1~p {
-            font-style: italic;
-        }
-    </style>
+  <style>
+    h1~p {
+      font-style: italic;
+    }
+  </style>
 </head>
 <body>
-    <h1>This is a header.</h1>
-    <p>This is a sibling of the header and will be italicized.</p>
-    <p>This will also be italicized because it's a sibling of the header.</p>
+  <h1>This is a header.</h1>
+  <p>This is a sibling of the header and will be italicized.</p>
+  <p>This will also be italicized because it's a sibling of the header.</p>
 </body>
 </html>
 ```
@@ -180,15 +180,15 @@ inputs with a type attribute.
 ```
 <html>
 <head>
-    <style>
-        input[type] {
-            border: 2px solid black;
-        }
-    </style>
+  <style>
+    input[type] {
+      border: 2px solid black;
+    }
+  </style>
 </head>
 <body>
-    <input type="text" placeholder="Text input">
-    <input type="number" placeholder="Number input">
+  <input type="text" placeholder="Text input">
+  <input type="number" placeholder="Number input">
 </body>
 </html>
 ```
@@ -199,15 +199,15 @@ styling text inputs.
 ```
 <html>
 <head>
-    <style>
-        input[type="text"] {
-            background-color: yellow;
-        }
-    </style>
+  <style>
+    input[type="text"] {
+      background-color: yellow;
+    }
+  </style>
 </head>
 <body>
-    <input type="text" placeholder="Text input">
-    <input type="password" placeholder="Password input">
+  <input type="text" placeholder="Text input">
+  <input type="password" placeholder="Password input">
 </body>
 </html>
 ```
@@ -218,15 +218,15 @@ example, styling links with https in their href.
 ```
 <html>
 <head>
-    <style>
-        a[href^="https"] {
-            color: green;
-        }
-    </style>
+  <style>
+    a[href^="https"] {
+      color: green;
+    }
+  </style>
 </head>
 <body>
-    <a href="https://example.com/">Secure link</a>
-    <a href="http://example.com/">Non-secure link</a>
+  <a href="https://example.com/">Secure link</a>
+  <a href="http://example.com/">Non-secure link</a>
 </body>
 </html>
 ```
@@ -237,15 +237,15 @@ For example, underlining links with example in the URL.
 ```
 <html>
 <head>
-    <style>
-        a[href*="example"] {
-            text-decoration: underline;
-        }
-    </style>
+  <style>
+    a[href*="example"] {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <a href="https://example.com/">This contains 'example' and is underlined.</a>
-    <a href="https://otherlink.com">This is not underlined.</a>
+  <a href="https://example.com/">This contains 'example' and is underlined.</a>
+  <a href="https://otherlink.com">This is not underlined.</a>
 </body>
 </html>
 ```
@@ -261,14 +261,14 @@ link when hovered.
 ```
 <html>
 <head>
-    <style>
-        a:hover {
-            color: red;
-        }
-    </style>
+  <style>
+    a:hover {
+      color: red;
+    }
+  </style>
 </head>
 <body>
-    <a href="https://example.com/">Hover over this to see the effect.</a>
+  <a href="https://example.com/">Hover over this to see the effect.</a>
 </body>
 </html>
 ```
@@ -278,14 +278,14 @@ link when hovered.
 ```
 <html>
 <head>
-    <style>
-        input:focus {
-            outline: 3px solid red;
-        }
-    </style>
+  <style>
+    input:focus {
+      outline: 3px solid red;
+    }
+  </style>
 </head>
 <body>
-    <input type="text">
+  <input type="text">
 </body>
 </html>
 ```
@@ -295,15 +295,15 @@ link when hovered.
 ```
 <html><head></head>
 <style>
-    p:first-child {
-        color: brown;
-    }
+  p:first-child {
+    color: brown;
+  }
 </style>
 <body>
-    <div>
-        <p>Hello1</p>
-        <p>Hello2</p>
-    </div>
+  <div>
+    <p>Hello1</p>
+    <p>Hello2</p>
+  </div>
 </body></html>
 ```
 
@@ -312,15 +312,15 @@ link when hovered.
 ```
 <html><head></head>
 <style>
-    p:last-child {
-        color:green;
-    }
+  p:last-child {
+    color:green;
+  }
 </style>
 <body>
-    <div>
-        <p>Hello1</p>
-        <p>Hello2</p>
-    </div>
+  <div>
+    <p>Hello1</p>
+    <p>Hello2</p>
+  </div>
 </body></html>
 ```
 
@@ -332,7 +332,7 @@ link when hovered.
     }
 </style>
 <body>
-    <div>
+  <div>
 ↔​
 ```
 
@@ -346,12 +346,12 @@ a sentence. It is usually used to beautify the internal content of an element.
 ```
 <html><head></head>
 <style>
-    h1::before {
-        content: "★ "
-    }
+  h1::before {
+    content: "★ "
+  }
 </style>
 <body>
-    <h1 tabindex="0">Welcome to GFG</h1>
+  <h1 tabindex="0">Welcome to GFG</h1>
 </body></html>
 ```
 
@@ -360,13 +360,13 @@ a sentence. It is usually used to beautify the internal content of an element.
 ```
 <html><head></head>
 <style>
-    h1:active::before {
-        content: "☀ ";
-        color: orangered;
-    }
+  h1:active::before {
+    content: "☀ ";
+    color: orangered;
+  }
 </style>
 <body>
-    <h1 tabindex="0">Welcome to GFG</h1>
+  <h1 tabindex="0">Welcome to GFG</h1>
 </body></html>
 ```
 
@@ -376,13 +376,13 @@ beginning of a new line.
 ```
 <html><head></head>
 <style>
-    p::first-line {
-        color: red;
-    }
+  p::first-line {
+    color: red;
+  }
 </style>
 <body>
-    <p>Welcome to GFG<br>
-        Hello GFG</p>
+  <p>Welcome to GFG<br>
+    Hello GFG</p>
 </body>
 </html>
 ```
@@ -392,13 +392,13 @@ beginning of a new line.
 ```
 <html><head></head>
 <style>
-    p::first-letter {
-        color: red;
-        font-size: 23px;
-    }
+  p::first-letter {
+    color: red;
+    font-size: 23px;
+  }
 </style>
 <body>
-    <p>Welcome to GFG</p>
+  <p>Welcome to GFG</p>
 </body></html>
 ```
 
@@ -407,25 +407,25 @@ beginning of a new line.
 ```
 <html><head></head>
 <style>
-    input::placeholder {
-        font-size: 20x;
-        font-family: sans-serif;
-        font-weight: 900;
-    }
+  input::placeholder {
+    font-size: 20x;
+    font-family: sans-serif;
+    font-weight: 900;
+  }
 </style>
 <body>
-    <input type="text" placeholder="Enter your name">
+  <input type="text" placeholder="Enter your name">
 </body></html>
 <html><head></head>
 <style>
-    input::placeholder {
-        font-size: 20x;
-        font-family: sans-serif;
-        font-weight: 900;
-    }
+  input::placeholder {
+    font-size: 20x;
+    font-family: sans-serif;
+    font-weight: 900;
+  }
 </style>
 <body>
-    <input type="text" placeholder="Enter your name">
+  <input type="text" placeholder="Enter your name">
 </body></html>
 ```
 
